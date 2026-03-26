@@ -37,7 +37,7 @@ const sentimentConfig = {
 };
 
 // ─── Claude API helpers ─────────────────────────────────────────────────────
-const ANTHROPIC_API_KEY = "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";
+const ANTHROPIC_API_KEY = import.meta.env.VITE_ANTHROPIC_API_KEY;
 const ANTHROPIC_HEADERS = {
   "Content-Type": "application/json",
   "x-api-key": ANTHROPIC_API_KEY,
